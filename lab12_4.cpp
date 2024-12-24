@@ -1,6 +1,8 @@
 #include<iostream>
 
 using namespace std;
+template <typename lebron> 
+void mySwap( lebron & , lebron & );
 
 int main(){
 	int x, y;
@@ -29,4 +31,8 @@ int main(){
 
 	return 0;
 }
-
+template <typename lebron>
+void mySwap( lebron &a , lebron &b){
+lebron q = a ;
+     a = b ;
+	 b = q ; }
